@@ -1,10 +1,11 @@
 
-let express = require('express');
+
 let mainRouter=require('./mainRoutes');
+let express = require('express');
 let app = express();
 
 app.use('/', mainRouter);
-app.listen(process.env.PORT || 3000);
+app.set('port', process.env.PORT || 8080)
 
 		
 		
