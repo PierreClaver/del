@@ -5,8 +5,9 @@ let express = require('express');
 let app = express();
 
 app.use('/', mainRouter);
-app.set('port', process.env.PORT || 8080)
+app.listen('port', process.env.PORT || 8080)
 console.log('Done')
+
 
 		
 		
