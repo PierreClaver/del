@@ -5,7 +5,10 @@ let express = require('express');
 let app = express();
 
 app.use('/', mainRouter);
-app.listen('port', process.env.PORT || 8080)
+//app.set('port', process.env.PORT || 8080)
+port = port = process.env.port || 3000;
+app.listen(port);
+
 console.log('Done')
 
 
