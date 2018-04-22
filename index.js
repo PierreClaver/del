@@ -6,6 +6,7 @@ let app = express();
 
 app.use('/', mainRouter);
 app.set('port', process.env.PORT || 8080)
+console.log('Done')
 
 		
 		
